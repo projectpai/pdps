@@ -123,10 +123,10 @@ Storage Method: This is the storage method being utilized.  In the initial imple
     <td></td>
   </tr>
   <tr>
-    <td>PAI CRC</td>
-    <td>Checksum</td>
+    <td>PAI Checksum</td>
+    <td>DSHA256</td>
     <td>32</td>
-    <td>crc32(header + payload)</td>
+    <td>SUBSTR(0, 8, DSHA256(CONCAT(header, payload)))</td>
   </tr>
 </table>
 
