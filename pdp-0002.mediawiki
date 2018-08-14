@@ -12,7 +12,7 @@ License: MIT
 
 ==Abstract==
 
-This document describes an initial specification for extending the standard PAIcoin protocol to include a method of submitting and provisioning access to arbitrary data.  This is achieved by utilizing a segmented network of torrent nodes, a custom OP_RETURN data protocol and elliptical encryption.
+This document describes an initial specification for extending the standard PAI Coin protocol to include a method of submitting and provisioning access to arbitrary data.  This is achieved by utilizing a segmented network of torrent nodes, a custom OP_RETURN data protocol and elliptical encryption.
 
 The specification consists of several parts. In the first part, the protocol for the OP_RETURN format for submitters and recipients is detailed. The second part discusses how the data is stored and distributed in v1 of the implementation.  The third part covers further expansion of ideas for indexing, storage and participant rewards.
 
@@ -56,7 +56,7 @@ In order to achieve our goals with using the PAI blockchain to track provisionin
 
 Header:  The initial 8 bytes after the OP_RETURN code that indicate that it is a PAI data storage txout and the version currently being used.
 Payload: The operation and associated parameters for the request
-Operations: Types of requests that can be made via the PAIcoin data storage implementation
+Operations: Types of requests that can be made via the PAI Coin data storage implementation
 Storage Method: This is the storage method being utilized.  In the initial implementation we have 0x01 which is the segmented bittorrent based solution as detailed below.
 
 ====Protocol Definition====
@@ -241,4 +241,4 @@ This PDP on its own does not cause any backwards incompatibility.
 
 ==Implementation==
 
-An initial implementation of this PDP is included in the PAIcoin core in the contrib/data-store directory.  This includes a Python API implementation of the Data Provider specification and Dockerfiles for launching torrent nodes using OpenTracker.  It also includes sample code for submitting OP_RETURN transactions and exercising the protocol for Submitters and Recipients.
+An initial implementation of this PDP is included in the PAI Coin core in the contrib/data-store directory.  This includes a Python API implementation of the Data Provider specification and Dockerfiles for launching torrent nodes using OpenTracker.  It also includes sample code for submitting OP_RETURN transactions and exercising the protocol for Submitters and Recipients.
