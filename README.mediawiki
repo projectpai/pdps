@@ -4,7 +4,7 @@ We are fairly liberal with approving PDPs, and try not to be too involved in dec
 
 Having a PDP here does not make it a formally accepted standard until its status becomes Final or Active.
 
-Those proposing changes should consider that ultimately consent may rest with the consensus of the PAIcoin users.
+Those proposing changes should consider that ultimately consent may rest with the consensus of the PAI Coin users.
 
 {| class="wikitable sortable" style="width: auto; text-align: center; font-size: smaller; table-layout: fixed;"
 !Number
