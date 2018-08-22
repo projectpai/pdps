@@ -167,7 +167,7 @@ Storage Method: This is the storage method being utilized.  In the initial imple
 </table>
 
 
-====Operations Details====
+====Operation Details====
 
 *Grant - Method for granting access of arbitrary data to a recipient. If the storage provider requires a payment for this operation, it should be paid for with the Grant request by one of the outputs of the transaction.  
 *Revoke - Method used to inform the original recipient of the encrypted data that all copies of the provided data should be destroyed and that further usage is prohibited.  
