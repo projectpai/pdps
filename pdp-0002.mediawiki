@@ -228,10 +228,10 @@ signature: [signed hash proving ownership of original submission]</td>
 </table>
 
 
-Info -- Used to retrieve high level information about a given provider.  This can be used to determine information about an unknown provider that has been added via the add-entrypoint operation.  Response data is currently limited to the provider name, retention period and cost (per MB) stored.
-Make Torrent -- This is used to submit an encrypted data file to be stored on the provider along with a public key to use for later operations.  The data provider should create the torrent file, associate it with the public key, add it to its index and return the ID to be used by other operations
-Get Torrent -- This is used by the recipient of the data file to get the torrent file to be used for retrieval.
-Remove -- This is used by the original submitter to remove the data from the storage provider at which time it is no longer required.  It requires a signed version of the file ID using the private side of the keypair submitted in the Make Torrent request.
+*Info - Used to retrieve high level information about a given provider.  This can be used to determine information about an unknown provider that has been added via the add-entrypoint operation.  Response data is currently limited to the provider name, retention period and cost (per MB) stored.  
+* Make Torrent - This is used to submit an encrypted data file to be stored on the provider along with a public key to use for later operations.  The data provider should create the torrent file, associate it with the public key, add it to its index and return the ID to be used by other operations  
+* Get Torrent -- This is used by the recipient of the data file to get the torrent file to be used for retrieval.  
+* Remove - This is used by the original submitter to remove the data from the storage provider at which time it is no longer required.  It requires a signed version of the file ID using the private side of the keypair submitted in the Make Torrent request.  
 
 In addition to these operations, the storage provider is free to use the ‘retention_period’ as returned in the ‘info’ request in order to cleanup old files.  Any files older than the retention period can be removed.  Likewise, if there is a cost for the data provider than the file can be removed after 24 hours if a transaction is not received to pay for storage for the length of the retention period to the ‘wallet’ specified by the ‘info’ endpoint.
 
