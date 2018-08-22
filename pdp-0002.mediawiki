@@ -169,10 +169,10 @@ Storage Method: This is the storage method being utilized.  In the initial imple
 
 ====Operations Details====
 
-Grant-- This is the method an end-user follows to grant access to arbitrary data to a recipient.  The first operand is the hash reference returned by the data storage provider upon submission for later retrieval.  The second operand is the txout index of the intended recipient of that data within the transaction as a whole.  One additional note is that if the storage provider requires a payment for this operation that should be paid for with the Grant request as one of the txouts of the transaction.
-Revoke -- This method is used to tell the original recipient of the encrypted data that all copies of the provided data should be destroyed and further usage is prohibited.
-Add Provider-- This method is used with the initial PAI data storage method for submitting base URLs for submitting data to the PAI data storage system per the API definition defined below
-Remove Provider-- This method is used with the initial PAI data storage method to indicate that an existing entrypoint should no longer be used and has been retired
+*Grant - Method for granting access of arbitrary data to a recipient. If the storage provider requires a payment for this operation, it should be paid for with the Grant request by one of the outputs of the transaction.  
+*Revoke - Method used to inform the original recipient of the encrypted data that all copies of the provided data should be destroyed and that further usage is prohibited.  
+*Add Provider - Method used with the initial PAI Data Storage method to add entrypoints for submitting data to the PAI Data Storage system per the API definition defined below.  
+*Remove Provider - Method used with the initial PAI Data Storage method to indicate that an existing entrypoint should no longer be used and has been retired.  
 
 ===Storage Provider API and Behavior===
 
